@@ -5,23 +5,15 @@
  * @format
  * @flow strict-local
  */
-
-import React, {Component} from 'react';
-
+import 'react-native-gesture-handler';
+import React from 'react';
 import {ImageBackground, StyleSheet, View, Text, Button} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {Login} from 'components/login.js';
+const App = () => {
+  return <NavigationContainer></NavigationContainer>;
+};
 
-class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <ImageBackground style={styles.ImageBackground}>
-          <Text style={styles.text}>hello splash </Text>
-          <Button title={'LogIn'}></Button>
-        </ImageBackground>
-      </View>
-    );
-  }
-}
 const styles = StyleSheet.create({
   container: {flex: 1},
   ImageBackground: {
