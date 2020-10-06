@@ -9,7 +9,7 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import {ImageBackground, StyleSheet, View, Text, Button} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import {Login} from 'components/login.js';
+import {Login} from './components/Login.js';
 const App = () => {
   return <NavigationContainer></NavigationContainer>;
 };
